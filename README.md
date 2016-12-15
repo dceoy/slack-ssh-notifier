@@ -23,11 +23,11 @@ Usage
 3.  Test notification.
 
     ```sh
-    $ ./run.sh
+    $ ./notify.sh
     ```
 
 4.  Set `/etc/ssh/sshrc`.
 
     ```sh
-    $ sudo bash -c "echo 'bash $(pwd)/run.sh' >> /etc/ssh/sshrc"
+    $ sudo bash -c "echo 'bash $(pwd)/notify.sh' >> /etc/ssh/sshrc"
     ```
