@@ -5,14 +5,14 @@ set -e
 [[ "${1}" = '--debug' ]] && set -x
 
 source "$(dirname ${0})/slack_env.sh"
-# => SLACK_CHANNEL, SLACK_WEBHOOK_URL, SLACK_USERNAME, SLACK_ICON_EMOJI, IGNORED_IP
+# => SLACK_CHANNEL, SLACK_WEBHOOK_URL, SLACK_USERNAME, SLACK_ICON_URL, IGNORED_IP
 
 function slack_notify {
   curl -sSX POST --data-urlencode \
     "payload={'channel': '${SLACK_CHANNEL}', \
               'username': '${SLACK_USERNAME}', \
               'text': '${*}', \
-              'icon_emoji': '${SLACK_ICON_EMOJI}'}" \
+              'icon_url': '${SLACK_ICON_URL}'}" \
     ${SLACK_WEBHOOK_URL} > /dev/null
 }
 
