@@ -26,4 +26,4 @@ for ignored in ${IGNORED_IP[@]}; do
   [[ "${ignored}" = "${IP}" ]] && exit 0
 done
 
-slack_notify "[$(LANG=C date)]\t${TEXT}"
+slack_notify "${TEXT}"
