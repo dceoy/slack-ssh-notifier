@@ -1,5 +1,5 @@
-slack_ssh_login_notifier
-========================
+slack-ssh-notifier
+==================
 
 Slack notifier for SSH login
 
@@ -9,8 +9,8 @@ Usage
 1.  Check out the repository.
 
     ```sh
-    $ git clone https://github.com/dceoy/slack_ssh_login_notifier.git
-    $ cd slack_ssh_login_notifier
+    $ git clone https://github.com/dceoy/slack-ssh-notifier.git
+    $ cd slack-ssh-notifier
     ```
 
 2.  Set `slack_env.sh`.
